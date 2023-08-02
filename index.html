@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon-google.png" type="image/x-icon">
+    <title>Guugle</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <ul class="alineado">
+            <li><a href="https://mail.google.com/mail/u/0/" class="link">Gmail</a></li>
+            <li><a href="https://www.google.com/imghp?hl=es-419&ogbl" class="link">Imágenes</a></li>
+        </ul>
+        <div class="opciones">
+            <img src="images/dots-menu.png" alt="Ícono de menú de Google" id="dots-icon" width="20px" height="20px">
+            <img src="images/perfil.jpg" alt="Mi perfil de Google" class="perfil">
+        </div>
+    </nav>
+    <div id="menu-desplegable" class="desplegable">
+        <ul> 
+        <div class="fila-app">
+            <li><img src="images/perfil.jpg" alt="Mi perfil de Google" class="perfil"><p>Cuenta</p></li>
+            <li><img src="images/glogo.png" alt="Ícono de búsqueda"><p>Búsqueda</p></li>
+            <li><img src="images/business.png" alt="Ícono de Negocio"><p>Negocio</p></li>
+        </div>
+        <div class="fila-app">
+            <li><img src="images/maps.png" alt="Ícono de Maps"><p>Maps</p></li>
+            <li><img src="images/youtube.png" alt="Ícono de Youtube"><p>Youtube</p></li>
+            <li><img src="images/play.png" alt="Ícono de Playstore"><p>Play</p></li>
+        </div>
+        <div class="fila-app">
+            <li><img src="images/news.png" alt="Ícono de Noticias"><p>Noticias</p></li>
+            <li><img src="images/gmail.png" alt="Ícono de Gmail"><p>Gmail</p></li>
+            <li><img src="images/meet.png" alt="Ícono de Meet"><p>Meet</p></li>
+        </div>
+        <div class="fila-app">
+            <li><img src="images/contact.png" alt="Ícono de Contactos"><p>Contactos</p></li>
+            <li><img src="images/drive.png" alt="Ícono de Drive"><p>Drive</p></li>
+            <li><img src="images/calendar.png" alt="Ícono de Calendar"><p>Calendario</p></li>
+        </div>
+        </ul>
+    </div>
+    <section class="contenido">
+        <img src="images/google.png" alt="Logo de Google" class="logo">
+        <form action="">
+            <fieldset class="buscar alineado">
+                <label for=""><img src="images/lupa.png" alt="Ícono de lupa" class="icono"></label>
+                <input type="text">
+                <div class="alineado">
+                    <label for=""><img src="images/mic.png" alt="Ícono de Mic" class="miclens" width="15px" height="20px"></label>
+                    <label for=""><img src="images/lens.png" alt="Ícono de Lens" class="miclens" width="25px" height="25px"></label>
+                </div>
+            </fieldset>
+        </form>
+        <div class="botones">
+            <a href="" class="link">Buscar con Google</a>
+            <a href="" class="link">Voy a tener suerte</a>
+        </div>
+    </section>
+    <footer>
+<div>
+    <p>Argentina</p>
+</div>
+<hr>
+<div class="pie">
+<ul>
+    <li><a href="">Sobre Google</a></li>
+    <li><a href="">Publicidad</a></li>
+    <li><a href="">Negocios</a></li>
+    <li><a href="">Cómo funciona la Búsqueda</a></li>
+</ul>
+<ul>
+    <li><a href="">Privacidad</a></li>
+    <li><a href="">Condiciones</a></li>
+    <li><a href="">Preferencias</a></li>
+</ul>
+</div>
+    </footer>
+</body>
+<script>
+    /* Menú desplegable */
+    document.addEventListener('DOMContentLoaded', function () {
+        const dotsIcon = document.getElementById('dots-icon');
+        const menuDesplegable = document.getElementById('menu-desplegable');
+
+        dotsIcon.addEventListener('click', function () {
+            if (menuDesplegable.style.display === 'none' || menuDesplegable.style.display === '') {
+                menuDesplegable.style.display = 'flex';
+            } else {
+                menuDesplegable.style.display = 'none';
+            }
+        });
+    });
+</script>
+</html>
