@@ -22,6 +22,10 @@ body{
     color: white;
 }
 
+.link:hover{
+    text-decoration: underline;
+}
+
 .perfil{
     max-width: 30px;
     margin: 10px;
